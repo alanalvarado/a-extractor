@@ -182,11 +182,9 @@
   },
   {
     domain: 'hbr.org/\\d+/',
-    content: '.article-content .article',
-    author: '.article-header .byline a',
+    author: '.article-byline.detached a',
     date: {
-      selector: 'meta[property="article:published_time"]',
-      attr: 'content',
+      selector: '.pub-date',
     },
   },
   {
@@ -373,6 +371,19 @@
     domain: 'smh.com.au/',
     content: 'article div[itemprop="articleBody"]',
     author: '.signature__info h5[rel="author"]',
+  },
+  {
+    domain: 'stackoverflow.com/',
+    content: [
+      '#content .postcell.post-layout--right .js-post-body',
+      '#answers-header .flex--item',
+      '#answers .answer .answercell.post-layout--right .js-post-body',
+    ],
+    date: {
+      selector: '.post-signature.owner .user-action-time span',
+      attr: 'title',
+    },
+    author: '#question .user-details[itemprop="author"] span[itemprop="name"]',
   },
   {
     domain: 'start-up.ro/',
