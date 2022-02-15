@@ -378,6 +378,7 @@
       '#content .postcell.post-layout--right .js-post-body',
       '#answers-header .flex--item',
       '#answers .answer .answercell.post-layout--right .js-post-body',
+      '#answers .answer.accepted-answer .answercell.post-layout--right .js-post-body',
     ],
     date: {
       selector: '.post-signature.owner .user-action-time span',
