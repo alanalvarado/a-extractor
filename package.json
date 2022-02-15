@@ -33,7 +33,9 @@
     "url": "git+https://github.com/croqaz/a-extractor.git"
   },
   "scripts": {
-    "test": "npx mocha $(find . -name './test/*.test.js')"
+    "test": "npx mocha $(find . -name './test/*.test.js')",
+    "sortDB": "node script/sort_db.js",
+    "syncReadme": "node script/sync_readme.js"
   },
   "version": "2.0.2"
 }
