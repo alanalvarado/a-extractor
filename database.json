@@ -153,6 +153,12 @@
     "content": ".article div[itemprop=\"articleBody\"]"
   },
   {
+    "domain": "forum.keyboardmaestro.com/",
+    "content": ".topic-owner .topic-body",
+    "date": ".topic-owner .topic-body .relative-date",
+    "author": ".topic-owner .username a"
+  },
+  {
     "domain": "foxnews.com/",
     "content": "article div.article-body"
   },
@@ -250,6 +256,14 @@
     "author": "article.details .content-meta>b>a",
     "date": "article.details .content-meta b.text-secondary",
     "content": "article.details p"
+  },
+  {
+    "domain": "linuxize.com/",
+    "content": ".markdown",
+    "date": {
+      "selector": "time",
+      "attr": "datetime"
+    }
   },
   {
     "author": "article.post span.author_name",
@@ -399,6 +413,20 @@
   {
     "domain": "stirileprotv.ro/",
     "content": "#stuck"
+  },
+  {
+    "domain": "superuser.com/",
+    "content": [
+      "#content .postcell.post-layout--right .js-post-body",
+      "#answers-header > h2",
+      "#answers .answer .answercell.post-layout--right .js-post-body",
+      "#answers .answer.accepted-answer .answercell.post-layout--right .js-post-body"
+    ],
+    "date": {
+      "selector": ".post-signature.owner .user-action-time span",
+      "attr": "title"
+    },
+    "author": "#question .user-details[itemprop=\"author\"] a"
   },
   {
     "author": "a[rel=\"author\"]",
